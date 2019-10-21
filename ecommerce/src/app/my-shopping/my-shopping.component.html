@@ -1,1 +1,88 @@
-<p>my-shopping works!</p>
+<mdb-card cascade="true" narrower="true">
+    <!--Card image-->
+    <div class="view view-cascade gradient-card-header blue-gradient narrower py-2 mx-4 mb-3 d-flex justify-content-between align-items-center">
+  
+      <div>
+        <button mdbBtn color="white" outline="true" rounded="true" size="sm" type="button" class="px-2" mdbWavesEffect>
+            <mdb-icon fas icon="shopping-cart"></mdb-icon>
+        </button>
+      </div>
+      <a href="" class="white-text mx-3">My itens</a>
+  
+      <div>
+        <button type="button" mdbBtn color="white" outline="true" rounded="true" size="sm" class="px-2" mdbWavesEffect>
+          <mdb-icon fas icon="pencil-alt" class="mt-0"></mdb-icon>
+        </button>
+        <button type="button" mdbBtn color="white" outline="true" rounded="true" size="sm" class="px-2" mdbWavesEffect>
+          <mdb-icon fas icon="times" class="mt-0"></mdb-icon>
+        </button>
+       
+      </div>
+  
+    </div>
+    <!--/Card image-->
+  
+    <div class="px-4">
+  
+      <div class="table-wrapper">
+        <!--Table-->
+        <table class="mb-0" mdbTable hover="true">
+  
+          <!--Table head-->
+          <thead>
+          <tr>
+            <th>
+              <mdb-checkbox></mdb-checkbox>
+            </th>
+            <th class="th-lg">
+              <a (click)="sortBy('first')">Products
+                <mdb-icon fas icon="sort" class="ml-1"></mdb-icon>
+              </a>
+            </th>
+            <th class="th-lg">
+              <a (click)="sortBy('last')">Price
+                <mdb-icon fas icon="sort" class="ml-1"></mdb-icon>
+              </a>
+            </th>
+            <th class="th-lg">
+              <a (click)="sortBy('username')">Quantity
+                <mdb-icon fas icon="sort" class="ml-1"></mdb-icon>
+              </a>
+            </th>
+          </tr>
+          </thead>
+          <!--Table head-->
+  
+          <!--Table body-->
+          <tbody>
+          <tr *ngFor="let row of tableData;let i = index">
+            <th scope="row">
+              <mdb-checkbox></mdb-checkbox>
+            </th>
+            <td>{{row.first}}</td>
+            <td>{{row.last}}</td>
+            <td>{{row.username}}</td>
+          </tr>
+          </tbody>
+          <!--Table body-->
+        </table>
+        <!--Table-->
+      </div>
+    </div>
+  </mdb-card>
+<div class="row align-items-center justify-content-center"> 
+    <button type="button" mdbBtn outline="true" 
+      color="default" rounded="true" class="waves-effect">
+      <mdb-icon fas icon="money-check"></mdb-icon> Buy
+    </button>
+   
+    <button type="button" mdbBtn outline="true" 
+      color="default" rounded="true" class="waves-effect">
+      <mdb-icon fas icon="cart-plus"></mdb-icon> More
+    </button>
+  
+    <button type="button" mdbBtn outline="true"
+      color="default" rounded="true" class="waves-effect">
+      <mdb-icon far icon="window-close"></mdb-icon> Cancel
+    </button>
+</div>
