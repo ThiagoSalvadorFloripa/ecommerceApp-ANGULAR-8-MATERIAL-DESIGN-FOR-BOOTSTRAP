@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductRegisterComponent implements OnInit {
 
-  constructor() { }
+  constructor( ) { }
 
   ngOnInit() {
   }
+
+
+  onSubmit() {
+  
+  }
+
+  
 
 }

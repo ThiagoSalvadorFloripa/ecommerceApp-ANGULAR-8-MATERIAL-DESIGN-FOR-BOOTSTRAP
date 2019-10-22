@@ -1,1 +1,46 @@
-<p>product-register works!</p>
+
+  
+  <div class="mx-auto" style="width: 60%;">
+          
+        <mdb-card>
+        
+                <mdb-card-header class="info-color white-text text-center py-4 blue-gradient">
+                  <h5>
+                    <strong>Register Product</strong>
+                  </h5>
+                </mdb-card-header>
+              
+                <mdb-card-body class="px-lg-5 pt-0">
+              
+                  <form class="text-center" style="color: #757575;"  (ngSubmit)="onSubmit()">
+              
+                    <div class="md-form mt-20">
+                      <input type="text"  id="materialContactFormName" class="form-control"
+                        mdbInput>
+                      <label for="materialContactFormName">Description</label>
+                    </div>
+              
+                    <div class="md-form">
+                      <input type="email" id="materialContactFormEmail" class="form-control"
+                        mdbInput>
+                      <label for="materialContactFormEmail">Name</label>
+                    </div>
+
+                    <div class="md-form">
+                      <input type="email" id="materialContactFormEmail" class="form-control"
+                        mdbInput>
+                      <label for="materialContactFormEmail">Price</label>
+                    </div>
+              
+                    <div class="center-btn">
+                        <button class="col-md-4" clastype="button" mdbBtn gradient="blue" block="true" rounded="true"
+                                mdbWavesEffect>Register
+                        </button>
+                    </div>
+                  </form>
+              
+                </mdb-card-body>
+              
+    
+    </mdb-card>
+</div>
