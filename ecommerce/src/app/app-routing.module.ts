@@ -6,6 +6,7 @@ import { ModalComponent } from './modal/modal.component';
 import { MyShoppingComponent } from './my-shopping/my-shopping.component';
 
 const routes: Routes = [
+  {path: '', component: ProductListComponent},
   {path: 'productList', component: ProductListComponent},
   {path: 'productRegister', component: ProductRegisterComponent},
   {path: 'detail', component: ModalComponent},

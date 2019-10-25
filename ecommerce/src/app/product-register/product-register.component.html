@@ -78,8 +78,8 @@
               <div class="row">
                   <div class="col-md-6 offset-md-0">
                       <h3>Choose File</h3>            
-                      <div class="form-group">
-                          <input type="file" name="image" (change)="fileProgress($event)"/>
+                      <div class="float-left">
+                          <input class="btn btn-primary btn-sm float-left" type="file" (change)="fileProgress($event)"/>
                       </div>
                       <div *ngIf="fileUploadProgress">
                           Upload progress: {{ fileUploadProgress }}
@@ -96,13 +96,10 @@
               </div>
           </div>      
 
-
       </div>
-
       <!--Footer-->
       <div class="modal-footer justify-content-center">
         <a type="button" mdbBtn color="primary" class="waves-light" mdbWavesEffect (click)="onSubmit()" >Submit
-          <mdb-icon far icon="gem" class="ml-1"></mdb-icon>
         </a>
         <a type="button" mdbBtn color="primary" outline="true" class="waves-effect" mdbWavesEffect (click)="frame.hide()">Cancel</a>
       </div>

@@ -8,6 +8,7 @@ import { ModalComponent } from './modal/modal.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductRegisterComponent } from './product-register/product-register.component';
 import { MyShoppingComponent } from './my-shopping/my-shopping.component';
+import { ProductSearchComponent } from './product-search/product-search.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { MyShoppingComponent } from './my-shopping/my-shopping.component';
     ModalComponent,
     ProductListComponent,
     ProductRegisterComponent,
-    MyShoppingComponent
+    MyShoppingComponent,
+    ProductSearchComponent
   ],
   imports: [
     BrowserModule,
